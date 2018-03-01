@@ -1,8 +1,5 @@
 function initCamera() {
   // Uncomment and fill in the correct selectors below.
-  // capture($('<Your code here>'),
-  //        $('<Your code here>'),
-  //        $('<Your code here>'));
     capture($('#camera-video'),
           $('#camera-canvas'),
           $('#camera-button'));
@@ -19,7 +16,7 @@ function capture(video, canvas, snapshotButton) {
     //The success callback function. On user click of snapshot button,
     //draw the image on the canvas.
     video.attr('src', window.URL.createObjectURL(mediaStream));
-    snapshotButton.click(function(e) {
+    snapshotButton.click(function(e) {  
         console.log("Taking photo");
         //Calculate dimension of photo from the video element.
         var width = video.width();
